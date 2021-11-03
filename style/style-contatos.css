@@ -1,0 +1,230 @@
+* {
+    font-family: 'Zen Kurenaido', sans-serif; color: inherit;
+    transition: .2s ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(71, 135, 255);
+}
+
+body {
+display: flex;
+}
+
+#titulo {
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 10vh;
+    text-align: center;
+    width: 57vh;
+}
+
+#foto {
+    border-radius: 7%;
+    width: 57vh;
+}
+
+.lateral-esquerda {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    margin: 0;
+    align-items: flex-end;
+}
+
+.lateral-direita {
+    width: 50vw;
+    height: 100vh;
+    font-size: 5rem;
+    align-items: flex-start;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50vw;
+    height: 85vh;
+    padding-left: 80px;
+}
+
+#pagina-inicial {
+    width: 15rem;
+    height: 8rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 0.6rem;
+    border: 0.2rem solid;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+#pagina-inicial:hover {
+    background-color: rgba(128, 0, 128, 0.5);
+    color: black;
+}
+
+.links-externos {
+    width: 50vw;
+    height: 15vh;
+    padding-right: 1.5rem;
+    padding-left: 100px;
+    display: flex;
+}
+
+.contatos {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    max-width: 100px;
+}
+
+
+
+@media (max-width: 1200px) {
+    body {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 170vh;
+        width: 100vw;
+    }
+
+    .lateral-esquerda {
+        width: 100vw;
+        height: 95vh;
+        padding-bottom: 0;
+        align-items: center;
+    }
+
+    .direita {
+        width: 100vw;
+        height: 60vh;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .contatos {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-externos {
+        padding-left: 0;
+        width: 100vw;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        height: 100%;
+    }
+
+    .lateral-esquerda {
+        height: 50%;
+    }
+
+    .lateral-direita {
+        height: 50%;
+    }
+
+    .direita {
+        height: 30%;
+    }
+
+    .links-externos {
+        height: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #foto {
+        width: 80vw;
+    }
+
+    #titulo {
+        font-size: 13vw;
+        width: 100vw;
+    }
+
+    #pagina-inicial {
+        margin-top: 50px;
+        width: 50%;
+        height: 10vh;
+        font-size: 13vw;
+    }
+
+    .emails {
+        font-size: 10vw;
+    }
+
+    .contatos {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1024px) and (orientation:landscape) {
+    .lateral-direita {
+        margin-top: 5vh;
+    }
+    
+    .contatos {
+        padding-top: 0;
+    }
+    
+    .links-externos {
+        margin-top: 3vh;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 900px) and (orientation:landscape) {
+    .lateral-direita {
+        margin-top: 140vh;
+    }
+
+    .contatos {
+        padding-top: 0;
+    }
+
+    .links-externos {
+        margin-top: 25vh;
+    }
+
+    #foto {
+        width: 60vw;
+    }
+
+    #titulo {
+        font-size: 10vw;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 800px) and (orientation:landscape) {
+    .lateral-direita {
+        margin-top: 105vh;
+    }
+}
+
+@media (max-width: 650px) and (orientation:landscape) {
+    #pagina-inicial {
+        height: 30vh;
+        margin-top: 10vh;
+    }
+}
